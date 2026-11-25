@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #fff0f5, #e0f7fa);
+    padding: 20px;
+}
+
+.tarjeta {
+    width: 100%;
+    max-width: 440px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.oculta {
+    display: none;
+}
+
+.animar-entrada {
+    animation: aparecerSuave 0.45s ease-out;
+}
+
+@keyframes aparecerSuave {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#pantalla-inicio h1 {
+    color: #d81b60;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+#pantalla-inicio .subtitulo {
+    color: #666;
+    margin-bottom: 24px;
+}
+
+#pantalla-inicio .btn-principal {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #ec407a;
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+#pantalla-inicio .btn-principal:hover {
+    background-color: #d81b60;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(216, 27, 96, 0.25);
+}
