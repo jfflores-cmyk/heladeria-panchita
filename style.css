@@ -72,3 +72,59 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 8px 18px rgba(216, 27, 96, 0.25);
 }
+
+#pantalla-envases h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+#pantalla-envases .subtitulo {
+    color: #666;
+    margin-bottom: 24px;
+}
+
+#pantalla-envases .grid-opciones {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+#pantalla-envases .opcion-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #fce4ec;
+    color: #880e4f;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+#pantalla-envases .opcion-btn:hover {
+    background-color: #f8bbd0;
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 6px 14px rgba(136, 14, 79, 0.14);
+}
+
+#pantalla-envases .opcion-btn:active {
+    transform: scale(0.98);
+}
+
+#pantalla-envases .volver {
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    font-size: 0.92rem;
+    transition: color 0.2s ease;
+}
+
+#pantalla-envases .volver:hover {
+    color: #d81b60;
+}
+

@@ -15,7 +15,20 @@
         <button type="button" class="btn-principal" onclick="irAPantalla('pantalla-envases')">Escoge un envase</button>
     </main>
 
+    <main id="pantalla-envases" class="tarjeta oculta">
+    <h2>Elige un envase</h2>
+    <p class="subtitulo">Selecciona cómo quieres disfrutar tu helado</p>
 
+    <div class="grid-opciones">
+        <button type="button" class="opcion-btn" onclick="animarYCambiar(this, 'Cono')">🍦 En cono</button>
+        <button type="button" class="opcion-btn" onclick="animarYCambiar(this, 'Vaso')">🥤 En vaso</button>
+        <button type="button" class="opcion-btn" onclick="animarYCambiar(this, 'Tulipán')">🍨 En tulipán</button>
+    </div>
+
+    <button type="button" class="volver" onclick="irAPantalla('pantalla-inicio')">← Volver al inicio</button>
+    </main>
+
+    
 
     <script src="script.js"></script>
 </body>
