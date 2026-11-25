@@ -28,3 +28,7 @@ function animarYCambiar(elemento, envase) {
         irAPantalla("pantalla-sabores");
     }, 200);
 }
+
+function comprar(sabor) {
+    alert("Tu pedido se ha realizado con éxito");
+}
